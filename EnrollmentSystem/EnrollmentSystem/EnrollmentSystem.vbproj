@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7EDC5DC8-FD62-4A30-9089-0BF061380CC3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>EnrollmentSystem.My.MyApplication</StartupObject>
+    <RootNamespace>EnrollmentSystem</RootNamespace>
+    <AssemblyName>EnrollmentSystem</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>EnrollmentSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>EnrollmentSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.WPF, Version=4.7.0.37774, Culture=neutral, PublicKeyToken=0758b07a11a4f466, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.WPF.4.7.0.9\lib\net40\FontAwesome.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.4\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAAM.Designer.vb">
+      <DependentUpon>FrmAAM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAAM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAccountManagement.Designer.vb">
+      <DependentUpon>FrmAccountManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAccountManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdmin.Designer.vb">
+      <DependentUpon>FrmAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEnrollmentTab.Designer.vb">
+      <DependentUpon>FrmEnrollmentTab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEnrollmentTab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInquiries.Designer.vb">
+      <DependentUpon>FrmInquiries.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInquiries.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DbConnectionModule.vb" />
+    <Compile Include="frmRecordCourse.Designer.vb">
+      <DependentUpon>frmRecordCourse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecordCourse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrar.Designer.vb">
+      <DependentUpon>FrmRegistrar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistrar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportCOR.Designer.vb">
+      <DependentUpon>frmReportCOR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportCOR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportSections.Designer.vb">
+      <DependentUpon>frmReportSections.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportSections.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportStudentReports.Designer.vb">
+      <DependentUpon>frmReportStudentReports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportStudentReports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRequirements.Designer.vb">
+      <DependentUpon>FrmRequirements.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRequirements.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReports.Designer.vb">
+      <DependentUpon>frmReports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudents.Designer.vb">
+      <DependentUpon>frmStudents.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudents.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubjects.Designer.vb">
+      <DependentUpon>frmSubjects.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSubjects.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="FrmAdmission.Designer.vb">
+      <DependentUpon>FrmAdmission.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdmission.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAAM.resx">
+      <DependentUpon>FrmAAM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAccountManagement.resx">
+      <DependentUpon>FrmAccountManagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdmin.resx">
+      <DependentUpon>FrmAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdmission.resx">
+      <DependentUpon>FrmAdmission.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEnrollmentTab.resx">
+      <DependentUpon>FrmEnrollmentTab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInquiries.resx">
+      <DependentUpon>FrmInquiries.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecordCourse.resx">
+      <DependentUpon>frmRecordCourse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrar.resx">
+      <DependentUpon>FrmRegistrar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportCOR.resx">
+      <DependentUpon>frmReportCOR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportSections.resx">
+      <DependentUpon>frmReportSections.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportStudentReports.resx">
+      <DependentUpon>frmReportStudentReports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRequirements.resx">
+      <DependentUpon>FrmRequirements.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReports.resx">
+      <DependentUpon>frmReports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudents.resx">
+      <DependentUpon>frmStudents.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubjects.resx">
+      <DependentUpon>frmSubjects.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\logos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
